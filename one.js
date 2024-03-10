@@ -1,3 +1,4 @@
+// ++++++++++++++++++++  Question -1 +++++++++++++++++++++++++ 
 // We have a string and interviwer said that -> string ka har ek word ka pahla alphabet capital kar do 
 
 const str = "hi i am shivam"
@@ -31,3 +32,29 @@ console.log(CapitalizeWords)    //[ 'Shivam', 'Kushwaha', 'Is', 'A', 'Good', 'Bo
 // step -3 : ab ham array ke har ek word ko join() method ki madad se combine kara lege aur ye hame ek string dega 
 let eachWordCapitalizedString = CapitalizeWords.join(" ")
 console.log(eachWordCapitalizedString)  //Shivam Kushwaha Is A Good Boy
+
+
+// ++++++++++++++++++++  Question -2 +++++++++++++++++++++++++ 
+const user1 = {
+    name: "shivam",
+    age: 20,
+    address: {
+        city: "shahjahanpur",
+        state: "UP"
+    }
+}
+
+const user2 = user1
+
+user2.name = "Vimal"
+user2.address.city = "Hardoi"
+console.log(user1.name)
+console.log(user1.address.city)
+
+
+// ++++++++++++++++++++  Question -3 +++++++++++++++++++++++++ 
+const arr = [0, 1, 2, 3, 4, 5]
+// apply the filter method && chaining of method
+let returnedArr = arr.filter((num) => num < 3).map((num) => num + 5)
+console.log(returnedArr)
+
